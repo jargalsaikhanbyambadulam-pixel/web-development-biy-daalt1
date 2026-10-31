@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow | Kanban Task Board</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-logo">
+        <i class="fa-solid fa-square-poll-vertical"></i>
+      </div>
+      <div class="brand-info">
+        <h2>Task<span>Flow</span></h2>
+        <p>PROJECT MANAGEMENT</p>
+      </div>
+    </div>
+
+    <!-- MAIN NAV (FLEXBOX) -->
+    <nav class="main-nav" id="mainNav">
+      <a href="#" class="nav-item active"><i class="fa-solid fa-chart-pie"></i> Самбар</a>
+      <a href="#" class="nav-item"><i class="fa-solid fa-list-check"></i> Даалгаврууд</a>
+      <a href="#" class="nav-item"><i class="fa-solid fa-users"></i> Баг</a>
+      <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Тохиргоо</a>
+    </nav>
+
+    <!-- HEADER ACTIONS (FLEXBOX) -->
+    <div class="header-actions">
+      <!-- Device View Toggle Button -->
+      <button class="view-btn" id="viewToggleBtn">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <span>Mobile View</span>
+      </button>
+
+      <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+      
+      <div class="user-avatar">
+        <img src="https://ui-avatars.com/api/?name=BY&background=6366f1&color=fff" alt="User Avatar">
+      </div>
+
+      <button class="mobile-menu-btn" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= DASHBOARD CONTAINER ================= -->
+  <div class="dashboard-container">
+
+    <!-- TOP CONTROL BAR (FLEXBOX) -->
+    <div class="top-control">
+      <div class="project-title">
+        <h1>Вэб хөгжүүлэлтийн төсөл 🚀</h1>
+        <span class="project-badge">Sprint 05</span>
+      </div>
+      
+      <div class="control-tools">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Даалгавар хайх...">
+        </div>
+        <button class="add-task-btn">
+          <i class="fa-solid fa-plus"></i> Шинэ даалгавар
+        </button>
+      </div>
+    </div>
+
+    <!-- STATS OVERVIEW (GRID LAYOUT) -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon purple"><i class="fa-solid fa-list-ul"></i></div>
+        <div class="stat-details">
+          <span>Нийт даалгавар</span>
+          <h3>16</h3>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon blue"><i class="fa-solid fa-spinner"></i></div>
+        <div class="stat-details">
+          <span>Хийгдэж буй</span>
+          <h3>5</h3>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon orange"><i class="fa-solid fa-clock-history"></i></div>
+        <div class="stat-details">
+          <span>Хянагдаж буй</span>
+          <h3>3</h3>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon green"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="stat-details">
+          <span>Дууссан</span>
+          <h3>8</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- KANBAN BOARD (CSS GRID) -->
+    <main class="kanban-board">
+
+      <!-- COLUMN 1: TO DO -->
+      <div class="kanban-column">
+        <div class="column-header">
+          <div class="column-title">
+            <span class="dot todo-dot"></span>
+            <h3>Хийх ажлууд</h3>
+            <span class="count">4</span>
+          </div>
+          <button class="col-action-btn"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+
+        <div class="task-list">
+          <article class="task-card">
+            <div class="task-tags">
+              <span class="tag tag-design">UI/UX Design</span>
+              <span class="priority priority-high">Өндөр</span>
+            </div>
+            <h4>Figma дэлгэцийн эх бэлтгэх</h4>
+            <p>Гар утасны болон компьютер харагдацын эхийг гаргах.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-user-circle"></i> Загвар
+              </div>
+              <div class="task-deadline danger">
+                <i class="fa-solid fa-calendar-day"></i> 11-р сарын 02
+              </div>
+            </div>
+          </article>
+
+          <article class="task-card">
+            <div class="task-tags">
+              <span class="tag tag-doc">Documentation</span>
+              <span class="priority priority-low">Бага</span>
+            </div>
+            <h4>Бие даалтын тайлан бичих</h4>
+            <p>Ашигласан CSS Grid болон Flexbox архитектурын тайлбар хийх.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-file-lines"></i> Тайлан
+              </div>
+              <div class="task-deadline">
+                <i class="fa-solid fa-calendar-day"></i> 11-р сарын 05
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- COLUMN 2: IN PROGRESS -->
+      <div class="kanban-column">
