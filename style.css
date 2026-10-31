@@ -76,9 +76,8 @@ body {
 .nav-item:hover,
 .nav-item.active {
   color: #6366f1;
-  background-color: #eeef2f5;
+  background-color: #eef2f6;
 }
-
 .header-actions {
   display: flex;
   align-items: center;
@@ -268,4 +267,5 @@ body {
 }
 
 .kanban-column {
-  background-color: #f1f
+  background-color: #f1f;
+}
