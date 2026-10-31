@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Холбоо барих | BOOKLY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="index.html">BOOK<span>LY.</span></a>
+    <button class="menu-toggle">☰</button>
+
+    <nav class="main-nav">
+        <a href="index.html">Нүүр</a>
+        <a href="books.html">Номууд</a>
+        <a href="about.html">Бидний тухай</a>
+        <a class="active" href="contact.html">Холбоо барих</a>
+    </nav>
+
+    <a class="cart-link" href="books.html#cart">
+        Сагс <span id="cart-count">0</span>
+    </a>
+</header>
+
+<main class="page-main">
+
+    <section class="page-hero">
+        <p class="eyebrow">SAY HELLO</p>
+        <h1>Бидэнтэй <em>холбогдоорой.</em></h1>
+        <p>Санал хүсэлт, асуулт байвал бидэнд бичээрэй.</p>
+    </section>
+
+    <section class="contact-layout section-wrap">
+
+        <div class="contact-info">
+            <p class="eyebrow">GET IN TOUCH</p>
+
+            <h2>
+                Таны санал<br>
+                <em>бидэнд үнэ цэнтэй.</em>
+            </h2>
+
+            <p>Имэйл: hello@bookly.mn</p>
+            <p>Утас: +976 7000-0000</p>
+            <p>Улаанбаатар, Монгол</p>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+
+            <label>
+                Таны нэр
+                <input name="name" required placeholder="Нэрээ бичнэ үү">
+            </label>
+
+            <label>
+                Имэйл хаяг
+                <input type="email" name="email" required placeholder="name@example.com">
+            </label>
+
+            <label>
+                Гарчиг
+                <input name="subject" required placeholder="Мессежийн гарчиг">
+            </label>
+
+            <label>
+                Мессеж
+                <textarea name="message" rows="5" required
+                    placeholder="Мессежээ энд бичнэ үү..."></textarea>
+            </label>
+
+            <button class="btn btn-gold" type="submit">
+                Илгээх ↗
+            </button>
+
+            <p id="contact-status" class="form-status"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <a class="logo" href="index.html">BOOK<span>LY.</span></a>
+    <p>Унших дуртай хүн бүрийн орон зай.</p>
+    <small>© 2026 BOOKLY.</small>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

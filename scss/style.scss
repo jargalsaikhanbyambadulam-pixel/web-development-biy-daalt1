@@ -1,0 +1,69 @@
+
+@use "variables" as *;
+@use "header";
+@use "books";
+
+:root {
+    --bg: #{$bg};
+    --gold: #{$gold};
+    --text: #{$text};
+    --muted: #{$muted};
+
+    --serif: "Playfair Display", Georgia, serif;
+    --sans: "DM Sans", Arial, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 6%;
+    padding: 70px 10% 85px;
+
+    h1 {
+        font: 600 clamp(3rem, 6vw, 5.7rem)/1.08 var(--serif);
+    }
+
+    em {
+        color: var(--gold);
+        font-style: normal;
+    }
+
+    .hero-text {
+        color: var(--muted);
+        max-width: 440px;
+    }
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: #17130d;
+    padding: 14px 22px;
+    transition: transform .25s;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+@media(max-width: 640px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

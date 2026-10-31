@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOOKLY - Tailwind CSS</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #10100f;
+            color: #f4f0e8;
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .gold {
+            color: #c6a56b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="flex flex-wrap items-center justify-between border-b border-amber-100/10 px-6 md:px-16 py-6">
+
+    <a class="serif text-3xl tracking-widest" href="index.html">
+        BOOK<span class="gold">LY.</span>
+    </a>
+
+    <nav class="flex gap-6 text-sm text-stone-400">
+        <a href="../index.html">Үндсэн сайт</a>
+        <a href="../books.html">Номууд</a>
+    </nav>
+
+</header>
+
+<main class="max-w-7xl mx-auto px-6 md:px-16">
+
+    <section class="grid md:grid-cols-2 gap-12 items-center py-20">
+
+        <div>
+
+            <p class="gold tracking-[.3em] text-xs mb-6">
+                TAILWIND CSS VERSION
+            </p>
+
+            <h1 class="serif text-6xl md:text-8xl leading-tight">
+                Stories<br>
+                <i class="gold">to keep.</i>
+            </h1>
+
+            <p class="text-stone-400 max-w-md my-8">
+                Tailwind utility class ашиглан бүтээсэн
+                responsive BOOKLY нүүр хуудас.
+            </p>
+
+            <a href="../books.html"
+               class="inline-block bg-amber-500 text-stone-950 px-7 py-4 font-bold text-sm hover:-translate-y-1 transition">
+                Цуглуулга үзэх ↗
+            </a>
+
+        </div>
+
+        <img
+            class="w-full h-[440px] object-cover shadow-2xl"
+            src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=900"
+            alt="Номын зураг">
+
+    </section>
+
+    <section class="pb-20">
+
+        <p class="gold tracking-widest text-xs mb-3">
+            CURATED COLLECTION
+        </p>
+
+        <h2 class="serif text-4xl mb-8">
+            Сонгомол бүтээлүүд.
+        </h2>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <article>
+                <img class="w-full h-64 object-cover"
+                     src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=500"
+                     alt="Ном">
+                <h3 class="serif text-xl mt-4">Атомын дадал</h3>
+                <p class="gold mt-2">35,000₮</p>
+            </article>
+
+            <article>
+                <img class="w-full h-64 object-cover"
+                     src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500"
+                     alt="Ном">
+                <h3 class="serif text-xl mt-4">Сэтгэж баяж</h3>
+                <p class="gold mt-2">32,000₮</p>
+            </article>
+
+            <article>
+                <img class="w-full h-64 object-cover"
+                     src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500"
+                     alt="Ном">
+                <h3 class="serif text-xl mt-4">Ирээдүйн код</h3>
+                <p class="gold mt-2">42,000₮</p>
+            </article>
+
+            <article>
+                <img class="w-full h-64 object-cover"
+                     src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=500"
+                     alt="Ном">
+                <h3 class="serif text-xl mt-4">Жижиг ханхүү</h3>
+                <p class="gold mt-2">24,000₮</p>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

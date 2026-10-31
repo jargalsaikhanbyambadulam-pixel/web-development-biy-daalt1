@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOOKLY Wireframe</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eee;
+            color: #333;
+            margin: 0;
+            padding: 25px;
+        }
+
+        .frame {
+            max-width: 1050px;
+            margin: auto;
+            background: white;
+            border: 2px solid #555;
+            padding: 18px;
+        }
+
+        .wf {
+            border: 2px dashed #999;
+            background: #f5f5f5;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            padding: 20px;
+            margin: 10px 0;
+            min-height: 65px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hero {
+            min-height: 240px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .grid .wf {
+            min-height: 150px;
+        }
+
+        .footer {
+            min-height: 90px;
+        }
+
+        @media(max-width: 600px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>BOOKLY — Нүүр хуудасны Wireframe</h1>
+
+<p>
+    Desktop layout-ийн бүдүүвч.
+    Гар утсанд grid 2 багана болж хувирна.
+</p>
+
+<div class="frame">
+
+    <div class="wf nav">
+        <b>LOGO: BOOKLY</b>
+        <span>Navigation: Нүүр | Номууд | Бидний тухай | Холбоо барих</span>
+        <b>Сагс</b>
+    </div>
+
+    <div class="wf hero">
+        HERO SECTION<br>
+        Гарчиг + тайлбар + CTA товч | Гол зураг
+    </div>
+
+    <div class="wf">
+        Ангиллын хэсгийн гарчиг
+    </div>
+
+    <div class="grid">
+        <div class="wf">Ангилал 01</div>
+        <div class="wf">Ангилал 02</div>
+        <div class="wf">Ангилал 03</div>
+        <div class="wf">Ангилал 04</div>
+    </div>
+
+    <div class="wf">
+        Онцлох номууд — Section heading
+    </div>
+
+    <div class="grid">
+        <div class="wf">Номын карт 1<br>Зураг / Нэр / Үнэ</div>
+        <div class="wf">Номын карт 2<br>Зураг / Нэр / Үнэ</div>
+        <div class="wf">Номын карт 3<br>Зураг / Нэр / Үнэ</div>
+        <div class="wf">Номын карт 4<br>Зураг / Нэр / Үнэ</div>
+    </div>
+
+    <div class="wf hero">
+        QUOTE / MULTIMEDIA BANNER
+    </div>
+
+    <div class="wf">
+        NEWSLETTER — Имэйл бүртгэл
+    </div>
+
+    <div class="wf footer">
+        FOOTER — Logo / Холбоос / Copyright
+    </div>
+
+</div>
+
+</body>
+</html>
+

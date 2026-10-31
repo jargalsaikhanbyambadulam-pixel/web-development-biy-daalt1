@@ -1,0 +1,34 @@
+
+@use "variables" as *;
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 82px;
+    padding: 0 7%;
+    border-bottom: 1px solid $line;
+}
+
+.logo {
+    font: 700 1.65rem $serif;
+    letter-spacing: 2px;
+
+    span {
+        color: $gold;
+    }
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+
+    a {
+        color: $muted;
+        text-decoration: none;
+
+        &:hover {
+            color: $gold;
+        }
+    }
+}

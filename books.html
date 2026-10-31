@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номууд | BOOKLY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="index.html">BOOK<span>LY.</span></a>
+    <button class="menu-toggle">☰</button>
+    <nav class="main-nav">
+        <a href="index.html">Нүүр</a>
+        <a class="active" href="books.html">Номууд</a>
+        <a href="about.html">Бидний тухай</a>
+        <a href="contact.html">Холбоо барих</a>
+    </nav>
+    <a class="cart-link" href="#cart">
+        Сагс <span id="cart-count">0</span>
+    </a>
+</header>
+
+<main class="page-main">
+
+    <section class="page-hero">
+        <p class="eyebrow">THE BOOK COLLECTION</p>
+        <h1>Номын <em>сан.</em></h1>
+        <p>Танд урам өгөх дараагийн хуудсаа олоорой.</p>
+    </section>
+
+    <section class="catalog section-wrap">
+
+        <aside class="filters">
+            <h3>Ангилал</h3>
+
+            <button class="filter-btn selected" data-filter="Бүгд">Бүх ном</button>
+            <button class="filter-btn" data-filter="Уран зохиол">Уран зохиол</button>
+            <button class="filter-btn" data-filter="Сэтгэл зүй">Сэтгэл зүй</button>
+            <button class="filter-btn" data-filter="Бизнес">Бизнес</button>
+            <button class="filter-btn" data-filter="Технологи">Технологи</button>
+        </aside>
+
+        <div class="catalog-content">
+
+            <div class="catalog-toolbar">
+                <p id="result-count">Бүх ном</p>
+
+                <input
+                    id="book-search"
+                    type="search"
+                    placeholder="Ном, зохиогч хайх...">
+            </div>
+
+            <div class="book-grid" id="all-books"></div>
+
+        </div>
+    </section>
+
+    <section class="cart-section section-wrap" id="cart">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">YOUR SELECTION</p>
+                <h2>Таны <em>сагс.</em></h2>
+            </div>
+        </div>
+
+        <div id="cart-items" class="cart-items">
+            <p class="muted">Таны сагс одоогоор хоосон байна.</p>
+        </div>
+
+        <div class="cart-total">
+            <span>Нийт дүн</span>
+            <strong id="cart-total">0₮</strong>
+
+            <button class="btn btn-gold" id="checkout-btn">
+                Захиалга баталгаажуулах ↗
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <a class="logo" href="index.html">BOOK<span>LY.</span></a>
+    <p>Унших дуртай хүн бүрийн орон зай.</p>
+    <small>© 2026 BOOKLY.</small>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+    initCatalog();
+</script>
+
+</body>
+</html>
