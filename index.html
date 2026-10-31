@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="mn">
 <head>
@@ -158,8 +159,218 @@
               </div>
             </div>
           </article>
+
+          <article class="task-card">
+            <div class="task-tags">
+              <span class="tag tag-dev">Backend</span>
+              <span class="priority priority-medium">Дунд</span>
+            </div>
+            <h4>API холболтын судалгаа хийх</h4>
+            <p>Task status өөрчлөх endpoint-уудыг тодорхойлох.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-server"></i> API
+              </div>
+              <div class="task-deadline">
+                <i class="fa-solid fa-calendar-day"></i> 11-р сарын 06
+              </div>
+            </div>
+          </article>
         </div>
       </div>
 
       <!-- COLUMN 2: IN PROGRESS -->
       <div class="kanban-column">
+        <div class="column-header">
+          <div class="column-title">
+            <span class="dot progress-dot"></span>
+            <h3>Хийгдэж буй</h3>
+            <span class="count">3</span>
+          </div>
+          <button class="col-action-btn"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+
+        <div class="task-list">
+          <article class="task-card">
+            <div class="task-tags">
+              <span class="tag tag-dev">Frontend</span>
+              <span class="priority priority-high">Өндөр</span>
+            </div>
+            <h4>Responsive Header болон Navigation бэлтгэх</h4>
+            <p>Flexbox ашиглан лого, цэс болон товчлууруудын байршлыг тохируулах.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-code"></i> HTML/CSS
+              </div>
+              <div class="task-deadline warning">
+                <i class="fa-solid fa-calendar-day"></i> Өнөөдөр
+              </div>
+            </div>
+          </article>
+
+          <article class="task-card">
+            <div class="task-tags">
+              <span class="tag tag-dev">Frontend</span>
+              <span class="priority priority-medium">Дунд</span>
+            </div>
+            <h4>Grid Layout ашиглан Kanban самбар босгох</h4>
+            <p>4 багана бүхий CSS Grid байршлыг responsive болгож тохируулах.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-table-columns"></i> Layout
+              </div>
+              <div class="task-deadline">
+                <i class="fa-solid fa-calendar-day"></i> Маргааш
+              </div>
+            </div>
+          </article>
+
+          <article class="task-card">
+            <div class="task-tags">
+              <span class="tag tag-design">Animations</span>
+              <span class="priority priority-low">Бага</span>
+            </div>
+            <h4>Card Hover Effect нэмэх</h4>
+            <p>Картуудыг дээш өргөгдөх transition болон shadow эффект оруулах.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> UI
+              </div>
+              <div class="task-deadline">
+                <i class="fa-solid fa-calendar-day"></i> 11-р сарын 04
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- COLUMN 3: IN REVIEW -->
+      <div class="kanban-column">
+        <div class="column-header">
+          <div class="column-title">
+            <span class="dot review-dot"></span>
+            <h3>Хянагдаж буй</h3>
+            <span class="count">2</span>
+          </div>
+          <button class="col-action-btn"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+
+        <div class="task-list">
+          <article class="task-card">
+            <div class="task-tags">
+              <span class="tag tag-test">QA / Testing</span>
+              <span class="priority priority-medium">Дунд</span>
+            </div>
+            <h4>Mobile View toggle товчлуурыг шалгах</h4>
+            <p>JavaScript дээр дарахад дэлгэцийн хэмжээ хэрхэн өөрчлөгдөхийг тестлэх.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-vial"></i> JS Code
+              </div>
+              <div class="task-deadline">
+                <i class="fa-solid fa-calendar-day"></i> 11-р сарын 03
+              </div>
+            </div>
+          </article>
+
+          <article class="task-card">
+            <div class="task-tags">
+              <span class="tag tag-sys">Security</span>
+              <span class="priority priority-high">Өндөр</span>
+            </div>
+            <h4>Cross-browser testing хийх</h4>
+            <p>Chrome, Edge болон Firefox дээр layout зөв эсэхийг шалгах.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-shield-halved"></i> QA
+              </div>
+              <div class="task-deadline warning">
+                <i class="fa-solid fa-calendar-day"></i> Өнөөдөр
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- COLUMN 4: DONE -->
+      <div class="kanban-column">
+        <div class="column-header">
+          <div class="column-title">
+            <span class="dot done-dot"></span>
+            <h3>Дууссан</h3>
+            <span class="count">5</span>
+          </div>
+          <button class="col-action-btn"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+
+        <div class="task-list">
+          <article class="task-card completed">
+            <div class="task-tags">
+              <span class="tag tag-sys">Setup</span>
+              <span class="priority priority-low">Бага</span>
+            </div>
+            <h4>GitHub Repository үүсгэж код оруулах</h4>
+            <p>Git push хийн төслийн сан байгуулж, бүтэц гаргасан.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-brands fa-github"></i> Git
+              </div>
+              <div class="task-deadline green-text">
+                <i class="fa-solid fa-check-double"></i> Биелсэн
+              </div>
+            </div>
+          </article>
+
+          <article class="task-card completed">
+            <div class="task-tags">
+              <span class="tag tag-design">Branding</span>
+              <span class="priority priority-medium">Дунд</span>
+            </div>
+            <h4>TaskFlow Logo болон Color Palette гаргах</h4>
+            <p>Indigo болон Slate өнгөний хослолыг тодорхойлж брэндбүүк хийсэн.</p>
+            <div class="task-footer">
+              <div class="task-assignee">
+                <i class="fa-solid fa-palette"></i> Design
+              </div>
+              <div class="task-deadline green-text">
+                <i class="fa-solid fa-check-double"></i> Биелсэн
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="app-footer">
+    <p>© 2026 TaskFlow SaaS · Built with HTML5, CSS Grid & Flexbox</p>
+  </footer>
+
+  <!-- JAVASCRIPT FOR INTERACTIVITY -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    const viewToggleBtn = document.getElementById('viewToggleBtn');
+
+    // Navigation toggle for Mobile
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+
+    // Device View Toggle (Forced Mobile View)
+    viewToggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('force-mobile-view');
+      
+      if (document.body.classList.contains('force-mobile-view')) {
+        viewToggleBtn.innerHTML = '<i class="fa-solid fa-desktop"></i><span>Desktop View</span>';
+        viewToggleBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+      } else {
+        viewToggleBtn.innerHTML = '<i class="fa-solid fa-mobile-screen-button"></i><span>Mobile View</span>';
+        viewToggleBtn.style.background = 'linear-gradient(135deg, #6366f1, #4f46e5)';
+      }
+    });
+  </script>
+</body>
+</html>
